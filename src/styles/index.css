@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+#__next {
+  @apply min-h-screen;
+}
+
+body {
+  /* font-family: "Gotham Pro", sans-serif; */
+}
+
+#toggler {
+  width: 28px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ededed;
+    border-radius: 16px;
+    transform: rotate(0deg);
+    transition: 0.2s ease-in-out;
+  }
+
+  &::before {
+    top: 0px;
+  }
+
+  &::after {
+    top: 9px;
+    width: 70%;
+    left: 30%;
+  }
+
+  &.open::before {
+    top: 9px;
+    transform: rotate(135deg);
+  }
+
+  &.open::after {
+    top: 9px;
+    width: 100%;
+    left: 0;
+    transform: rotate(-135deg);
+  }
+}
