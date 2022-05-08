@@ -1,6 +1,16 @@
+import Link from "next/link";
+
 const Hero: React.FC = () => (
-  <section className='flex h-screen justify-center items-center'>
-    <h1 className='text-2xl font-extrabold text-primary'>Hello World</h1>
+  <section className='flex flex-col relative gap-8 mt-16 lg:mt-24 px-8 py-32 lg:py-16 justify-center items-center overflow-x-clip'>
+    <div className='absolute inset-0 scale-y-125 scale-x-150 translate-x-1/4 rotate-6 bg-gradient-to-tr from-white to-primary/30 blur-3xl -z-10' />
+
+    <h1 className='text-4xl lg:text-6xl font-black text-center max-w-lg lg:max-w-4xl'>
+      Design, develop and boost your services
+    </h1>
+
+    <Link href='about'>
+      <a className='btn-primary'>Let&apos;s create together</a>
+    </Link>
   </section>
 );
 

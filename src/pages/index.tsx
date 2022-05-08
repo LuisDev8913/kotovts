@@ -4,6 +4,7 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 
 import Hero from "@/sections/Hero";
+import About from "@/sections/About";
 
 const Home: NextPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const Home: NextPage = () => (
     </Head>
 
     <Hero />
+    <About />
   </Layout>
 );
 
