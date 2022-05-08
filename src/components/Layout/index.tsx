@@ -1,4 +1,4 @@
-import Meta from "../Meta";
+import Header from "@/components/Header";
 
 interface Props {
   children?: React.ReactNode;
@@ -6,7 +6,7 @@ interface Props {
 
 const Layout: React.FC<Props> = ({ children }) => (
   <>
-    <Meta />
+    <Header />
     {children}
   </>
 );
