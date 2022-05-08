@@ -1,7 +1,5 @@
-import Head from "next/head";
-
 const Meta: React.FC = () => (
-  <Head>
+  <>
     <meta property='og:url' content='https://kotov.com.ua/' />
     <meta property='og:type' content='website' />
     <meta property='og:title' content='Paul Kotov' />
@@ -55,7 +53,7 @@ const Meta: React.FC = () => (
     <meta name='application-name' content='Paul Kotov' />
     <meta name='msapplication-TileColor' content='#ffffff' />
     <meta name='theme-color' content='#ffffff'></meta>
-  </Head>
+  </>
 );
 
 export default Meta;
