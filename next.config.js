@@ -10,6 +10,9 @@ const nextConfig = {
     });
 
     return config;
+  },
+  env: {
+    FORM_ID: process.env.FORM_ID
   }
 };
 
