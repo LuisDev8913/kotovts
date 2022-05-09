@@ -7,7 +7,7 @@ const About: React.FC = () => (
     className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-16 max-w-screen-2xl mx-auto px-4 md:px-8 py-20 lg:py-32'
   >
     <div className='w-full max-w-md lg:max-w-2xl'>
-      <h2 className='uppercase tracking-wider text-base lg:text-lg text-gray-700 font-medium mb-2'>
+      <h2 className='uppercase tracking-wider text-base lg:text-lg text-gray-600 font-medium mb-2'>
         Hi, I&apos;m Paul Kotov 👋
       </h2>
 

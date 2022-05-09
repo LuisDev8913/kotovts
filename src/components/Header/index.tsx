@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed inset-0 bottom-auto bg-white/60 backdrop-blur-md opacity-100 px-4 sm:px-8 transition-[height] ease-in-out delay-150 z-10 ${
+      className={`fixed inset-0 bottom-auto bg-white/60 backdrop-blur-md opacity-100 px-4 sm:px-8 transition-[height] ease-in-out delay-150 z-20 ${
         open ? "h-full" : "h-16 lg:h-24"
       }`}
     >
