@@ -5,6 +5,8 @@ import Layout from "@/components/Layout";
 
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
+import Portfolio from "@/sections/Portfolio";
+import Contacts from "@/sections/Contacts";
 
 const Home: NextPage = () => (
   <Layout>
@@ -14,6 +16,8 @@ const Home: NextPage = () => (
 
     <Hero />
     <About />
+    <Portfolio />
+    <Contacts />
   </Layout>
 );
 
