@@ -13,21 +13,21 @@ html {
 body {
   font-family: "Inter", sans-serif;
 
-  @apply bg-slate-50;
+  @apply bg-slate-50 text-black dark:text-white dark:bg-gray-900;
 }
 
 .btn {
-  @apply md:text-lg text-white font-bold border-2 rounded-2xl shadow-lg shadow-primary/20 flex items-center justify-center px-6 h-12 backdrop-blur-[3px] whitespace-nowrap transition delay-150 ease-in-out;
+  @apply md:text-lg text-white font-bold border-2 rounded-2xl shadow-lg shadow-primary-500/20 dark:shadow-primary-400/20 flex items-center justify-center px-6 h-12 backdrop-blur-[3px] whitespace-nowrap transition delay-150 ease-in-out;
 }
 
 .btn-primary {
   @apply btn;
-  @apply border-primary bg-primary md:hover:bg-primary/90 active:bg-primary/90;
+  @apply border-primary-500 dark:border-primary-400 bg-primary-500 dark:bg-primary-400 md:hover:bg-primary-500/90 dark:md:hover:bg-primary-400/90 active:bg-primary-500/90 dark:active:bg-primary-400/90;
 }
 
 .btn-secondary {
   @apply btn;
-  @apply border-white bg-white text-primary md:hover:bg-primary active:bg-primary md:hover:text-white active:text-white md:hover:border-primary active:border-primary;
+  @apply border-white bg-white text-primary-500 dark:text-primary-400 md:hover:bg-primary-500 dark:md:hover:bg-primary-400 active:bg-primary-500 dark:active:bg-primary-400 md:hover:text-white active:text-white md:hover:border-primary-500 dark:md:hover:border-primary-400 active:border-primary-500 dark:active:border-primary-500;
 }
 
 .btn-error {
@@ -51,10 +51,11 @@ body {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: black;
     border-radius: 16px;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
+
+    @apply bg-black dark:bg-white;
   }
 
   &::before {
@@ -87,5 +88,5 @@ body {
 }
 
 .social-icon {
-  @apply w-12 h-12 p-2 fill-gray-600 md:hover:fill-primary active:fill-primary focus:fill-primary transition ease-in-out delay-150;
+  @apply w-12 h-12 p-2 fill-gray-600 dark:fill-white md:hover:fill-primary-500 dark:md:hover:fill-primary-400 active:fill-primary-500 dark:active:fill-primary-400 focus:fill-primary-500 dark:focus:fill-primary-400 transition ease-in-out delay-150;
 }

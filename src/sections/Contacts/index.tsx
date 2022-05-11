@@ -20,19 +20,19 @@ const Contacts: React.FC = () => {
 
         <div className='w-full space-y-6'>
           <div>
-            <span className='uppercase tracking-wider text-sm text-gray-600 font-medium block mb-2'>
+            <span className='uppercase tracking-wider text-sm text-gray-600 dark:text-gray-400 font-medium block mb-2'>
               {t("E-Mail")}
             </span>
             <a
               href='mailto:paul@kotov.com.ua'
-              className='text-xl md:hover:text-primary focus:text-primary active:text-primary transition ease-in-out delay-150'
+              className='text-xl md:hover:text-primary-500 dark:md:hover:text-primary-400 focus:text-primary-500 dark:focus:text-primary-400 active:text-primary-500 dark:active:text-primary-400 transition ease-in-out delay-150'
             >
               paul@kotov.com.ua
             </a>
           </div>
 
           <div>
-            <span className='uppercase tracking-wider text-sm text-gray-600 font-medium block mb-2'>
+            <span className='uppercase tracking-wider text-sm text-gray-600 dark:text-gray-400 font-medium block mb-2'>
               {t("Follow")}
             </span>
             <div className='flex gap-2'>

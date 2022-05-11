@@ -30,7 +30,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         />
       </div>
 
-      <span className='text-2xl font-bold mb-1 group-hover:text-inherit group-focus:text-primary group-active:text-primary md:group-hover:text-primary transition ease-in-out delay-150'>
+      <span className='text-2xl font-bold mb-1 group-hover:text-inherit group-focus:text-primary-500 dark:group-focus:text-primary-400 group-active:text-primary-500 dark:group-active:text-primary-400 md:group-hover:text-primary-500 dark:md:group-hover:text-primary-400 transition ease-in-out delay-150'>
         {project.title[lang as "en" | "uk"]}
       </span>
       <p className='leading-relaxed'>

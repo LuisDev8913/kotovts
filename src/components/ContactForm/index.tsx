@@ -1,7 +1,7 @@
-import { Spinner } from "@/assets/svg";
-import { useForm } from "@formspree/react";
-import useTranslation from "next-translate/useTranslation";
 import { FormEventHandler, useState } from "react";
+import useTranslation from "next-translate/useTranslation";
+import { useForm } from "@formspree/react";
+import { Spinner } from "@/assets/svg";
 
 const ContactForm: React.FC = () => {
   const { t } = useTranslation("common");
@@ -27,37 +27,37 @@ const ContactForm: React.FC = () => {
   return (
     <form className='max-w-sm' onSubmit={handleSubmit}>
       <label>
-        <span className='uppercase tracking-wider font-medium text-sm text-gray-600 mb-2 block'>
+        <span className='uppercase tracking-wider font-medium text-sm text-gray-600 dark:text-gray-400 mb-2 block'>
           {t("Name")}
         </span>
         <input
           name='name'
           type='text'
-          className='border border-gray-300 focus:border-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
+          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-primary-500 rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
           placeholder={t("Igor Pechkin")}
         />
       </label>
       <label>
-        <span className='uppercase tracking-wider font-medium text-sm text-gray-600 mb-2 block'>
+        <span className='uppercase tracking-wider font-medium text-sm text-gray-600 dark:text-gray-400 mb-2 block'>
           {t("E-Mail")}
-          <span className='text-primary'>*</span>
+          <span className='text-primary-500 dark:text-primary-400'>*</span>
         </span>
         <input
           name='email'
           type='email'
-          className='border border-gray-300 focus:border-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
+          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-primary-500 rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
           placeholder='postman.igor.pechkin@gmail.com'
           required
         />
       </label>
       <label>
-        <span className='uppercase tracking-wider font-medium text-sm text-gray-600 mb-2 block'>
+        <span className='uppercase tracking-wider font-medium text-sm text-gray-600 dark:text-gray-400 mb-2 block'>
           {t("Message")}
-          <span className='text-primary'>*</span>
+          <span className='text-primary-500 dark:text-primary-400'>*</span>
         </span>
         <textarea
           name='message'
-          className='border border-gray-300 focus:border-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full resize-none'
+          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-primary-500 rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full resize-none'
           placeholder={t("Dear Paul") + "..."}
           rows={8}
           required
