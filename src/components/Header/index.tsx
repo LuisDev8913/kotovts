@@ -2,12 +2,15 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 import Navbar from "@/components/Navbar";
 import Controls from "@/components/Controls";
 import { useToggle } from "@/hooks/useToggle";
 import { LogoImage } from "@/assets/img";
 
 export const Header: React.FC = () => {
+  const { t } = useTranslation("common");
+
   const [open, toggle, setOpen] = useToggle();
 
   const router = useRouter();
@@ -35,7 +38,9 @@ export const Header: React.FC = () => {
               />
             </div>
 
-            <span className='text-2xl lg:text-3xl font-black'>Paul Kotov</span>
+            <span className='text-2xl lg:text-3xl font-black'>
+              {t("Paul Kotov")}
+            </span>
           </a>
         </Link>
 

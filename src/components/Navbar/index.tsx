@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { useWindowWidth } from "@/hooks/useWindowWidth";
+import useTranslation from "next-translate/useTranslation";
 
 interface Props {
   open: boolean;
@@ -20,6 +21,8 @@ const navLinkAnimation: Variants = {
 };
 
 const Navbar: React.FC<Props> = ({ open }) => {
+  const { t } = useTranslation("common");
+
   const windowWidth = useWindowWidth()!;
 
   const initialNavbar = useMemo(
@@ -42,7 +45,7 @@ const Navbar: React.FC<Props> = ({ open }) => {
           variants={navLinkAnimation}
           className='md:hover:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-150'
         >
-          About
+          {t("About")}
         </motion.a>
       </Link>
       <Link href='/portfolio' passHref>
@@ -51,7 +54,7 @@ const Navbar: React.FC<Props> = ({ open }) => {
           variants={navLinkAnimation}
           className='md:hover:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-150'
         >
-          Portfolio
+          {t("Portfolio")}
         </motion.a>
       </Link>
       <Link href='#contacts' passHref>
@@ -60,7 +63,7 @@ const Navbar: React.FC<Props> = ({ open }) => {
           variants={navLinkAnimation}
           className='md:hover:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-150'
         >
-          Contacts
+          {t("Contacts")}
         </motion.a>
       </Link>
     </motion.nav>

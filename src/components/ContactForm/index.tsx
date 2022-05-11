@@ -1,8 +1,11 @@
 import { Spinner } from "@/assets/svg";
 import { useForm } from "@formspree/react";
+import useTranslation from "next-translate/useTranslation";
 import { FormEventHandler, useState } from "react";
 
 const ContactForm: React.FC = () => {
+  const { t } = useTranslation("common");
+
   const [state, submit] = useForm(process.env.FORM_ID!, {
     data: { subject: "From Contact Form" }
   });
@@ -25,18 +28,19 @@ const ContactForm: React.FC = () => {
     <form className='max-w-sm' onSubmit={handleSubmit}>
       <label>
         <span className='uppercase tracking-wider font-medium text-sm text-gray-600 mb-2 block'>
-          Name
+          {t("Name")}
         </span>
         <input
           name='name'
           type='text'
           className='border border-gray-300 focus:border-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
-          placeholder='Igor Pechkin'
+          placeholder={t("Igor Pechkin")}
         />
       </label>
       <label>
         <span className='uppercase tracking-wider font-medium text-sm text-gray-600 mb-2 block'>
-          E-Mail<span className='text-primary'>*</span>
+          {t("E-Mail")}
+          <span className='text-primary'>*</span>
         </span>
         <input
           name='email'
@@ -48,12 +52,13 @@ const ContactForm: React.FC = () => {
       </label>
       <label>
         <span className='uppercase tracking-wider font-medium text-sm text-gray-600 mb-2 block'>
-          Message<span className='text-primary'>*</span>
+          {t("Message")}
+          <span className='text-primary'>*</span>
         </span>
         <textarea
           name='message'
           className='border border-gray-300 focus:border-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full resize-none'
-          placeholder='Dear Paul Kotov...'
+          placeholder={t("Dear Paul") + "..."}
           rows={8}
           required
         ></textarea>
@@ -71,9 +76,9 @@ const ContactForm: React.FC = () => {
             <Spinner className='w-6 h-6 text-white/50 animate-spin fill-white' />
           </div>
         ) : state.succeeded && isSubmited ? (
-          "Success"
+          t("Success")
         ) : (
-          "Submit"
+          t("Submit")
         )}
       </button>
     </form>

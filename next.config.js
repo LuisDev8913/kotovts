@@ -1,7 +1,9 @@
+const nextTranslate = require("next-translate");
+
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+const nextConfig = nextTranslate({
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
@@ -14,6 +16,6 @@ const nextConfig = {
   env: {
     FORM_ID: process.env.FORM_ID
   }
-};
+});
 
 module.exports = nextConfig;
