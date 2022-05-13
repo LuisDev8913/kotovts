@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth overflow-x-hidden;
 }
 
 #__next {
@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
 
-  @apply bg-slate-50 text-black dark:text-white dark:bg-gray-900;
+  @apply bg-slate-50 text-black dark:text-white dark:bg-gray-900 overflow-x-hidden;
 }
 
 .btn {
