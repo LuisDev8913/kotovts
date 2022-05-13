@@ -8,10 +8,10 @@ interface Props {
 
 const ProjectList: React.FC<Props> = ({ projects, className }) => (
   <div
-    className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 ${className}`}
+    className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 ${className}`}
   >
     {projects.map((project, i) => (
-      <ProjectCard key={i} project={project} />
+      <ProjectCard key={i} custom={i} project={project} />
     ))}
   </div>
 );

@@ -1,6 +1,19 @@
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import { motion, Variants } from "framer-motion";
 import { ProfileImage } from "@/assets/img";
+
+const aboutPictureAnimation: Variants = {
+  hidden: {
+    y: 32,
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.2, ease: "easeInOut" }
+  }
+};
 
 const About: React.FC = () => {
   const { t } = useTranslation("common");
@@ -20,9 +33,20 @@ const About: React.FC = () => {
         </p>
       </div>
 
-      <div className='max-w-sm 2xl:max-w-md drop-shadow-2xl'>
-        <Image src={ProfileImage} className='rounded-3xl' alt='profle' />
-      </div>
+      <motion.div
+        className='max-w-sm 2xl:max-w-md drop-shadow-2xl'
+        variants={aboutPictureAnimation}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 0.2, once: true }}
+      >
+        <Image
+          src={ProfileImage}
+          className='rounded-3xl'
+          alt='profle'
+          priority
+        />
+      </motion.div>
     </section>
   );
 };
