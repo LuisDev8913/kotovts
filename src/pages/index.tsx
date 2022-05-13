@@ -15,7 +15,9 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{t("Paul Kotov")}</title>
+        <title>
+          {t("Paul Kotov")} - {t("h1")}
+        </title>
       </Head>
 
       <Hero />
