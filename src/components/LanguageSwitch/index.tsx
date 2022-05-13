@@ -6,7 +6,7 @@ const LanguageSwitch: React.FC = () => {
   const router = useRouter();
 
   return (
-    <button className='relative group' type='button'>
+    <button type='button' aria-label='lang' className='relative group'>
       <LanguageIcon className='w-7 h-7 fill-black dark:fill-white' />
 
       <div className='text-lg pt-4 absolute bottom-0 translate-y-3/4 -right-2 opacity-0 pointer-events-none transition ease-in-out delay-150 group-hover:opacity-100 group-focus:opacity-100 group-hover:pointer-events-auto group-focus:pointer-events-auto group-hover:translate-y-[95%] group-focus:translate-y-[95%]'>

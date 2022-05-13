@@ -16,8 +16,11 @@ const Portfolio: React.FC = () => {
       />
 
       <div className='flex justify-center w-full'>
-        <Link href='portfolio'>
-          <a className='btn-secondary'>{t("More")}</a>
+        <Link href='/portfolio'>
+          <a className='btn-secondary'>
+            {t("More")}
+            <span className='sr-only'>{t("Portfolio")}</span>
+          </a>
         </Link>
       </div>
     </section>

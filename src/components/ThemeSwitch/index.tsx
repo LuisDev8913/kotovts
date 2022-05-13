@@ -13,7 +13,7 @@ const ThemeSwitch: React.FC = () => {
   const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
   return (
-    <button type='button' onClick={toggleTheme}>
+    <button type='button' aria-label='toggler' onClick={toggleTheme}>
       {theme === "dark" ? (
         <MoonIcon className='w-7 h-7 fill-black dark:fill-white' />
       ) : (
