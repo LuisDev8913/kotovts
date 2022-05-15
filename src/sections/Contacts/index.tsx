@@ -25,7 +25,7 @@ const Contacts: React.FC = () => {
             </span>
             <a
               href='mailto:paul@kotov.com.ua'
-              className='text-xl md:hover:text-primary-500 dark:md:hover:text-primary-400 focus:text-primary-500 dark:focus:text-primary-400 active:text-primary-500 dark:active:text-primary-400 transition ease-in-out delay-150'
+              className='text-xl md:hover:text-primary dark:md:hover:text-primary-400 focus:text-primary dark:focus:text-primary-400 active:text-primary dark:active:text-primary-400 transition ease-in-out delay-150'
             >
               paul@kotov.com.ua
             </a>

@@ -43,7 +43,7 @@ const Navbar: React.FC<Props> = ({ open }) => {
         <motion.a
           custom={1}
           variants={navLinkAnimation}
-          className='md:hover:text-primary-500 dark:md:hover:text-primary-400 active:text-primary-500 dark:active:text-primary-400 whitespace-nowrap transition ease-in-out delay-150'
+          className='md:hover:text-primary dark:md:hover:text-primary-400 active:text-primary dark:active:text-primary-400 whitespace-nowrap transition ease-in-out delay-150'
         >
           {t("About")}
         </motion.a>
@@ -52,7 +52,7 @@ const Navbar: React.FC<Props> = ({ open }) => {
         <motion.a
           custom={2}
           variants={navLinkAnimation}
-          className='md:hover:text-primary-500 dark:md:hover:text-primary-400 active:text-primary-500 dark:active:text-primary-400 whitespace-nowrap transition ease-in-out delay-150'
+          className='md:hover:text-primary dark:md:hover:text-primary-400 active:text-primary dark:active:text-primary-400 whitespace-nowrap transition ease-in-out delay-150'
         >
           {t("Portfolio")}
         </motion.a>
@@ -61,7 +61,7 @@ const Navbar: React.FC<Props> = ({ open }) => {
         <motion.a
           custom={3}
           variants={navLinkAnimation}
-          className='md:hover:text-primary-500 dark:md:hover:text-primary-400 active:text-primary-500 dark:active:text-primary-400 whitespace-nowrap transition ease-in-out delay-150'
+          className='md:hover:text-primary dark:md:hover:text-primary-400 active:text-primary dark:active:text-primary-400 whitespace-nowrap transition ease-in-out delay-150'
         >
           {t("Contacts")}
         </motion.a>

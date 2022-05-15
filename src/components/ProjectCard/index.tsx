@@ -41,7 +41,7 @@ const ProjectCard: React.FC<Props> = ({ custom, project }) => {
         </span>
       )}
 
-      <div className='flex drop-shadow-xl rounded-xl overflow-hidden mb-4'>
+      <div className='flex shadow-xl rounded-xl overflow-hidden mb-4'>
         <Image
           src={project.img}
           alt={project.title}
@@ -50,7 +50,7 @@ const ProjectCard: React.FC<Props> = ({ custom, project }) => {
         />
       </div>
 
-      <span className='text-2xl font-bold mb-1 group-hover:text-inherit group-focus:text-primary-500 dark:group-focus:text-primary-400 group-active:text-primary-500 dark:group-active:text-primary-400 md:group-hover:text-primary-500 dark:md:group-hover:text-primary-400 transition ease-in-out delay-150'>
+      <span className='text-2xl font-bold mb-1 group-hover:text-inherit group-focus:text-primary dark:group-focus:text-primary-400 group-active:text-primary dark:group-active:text-primary-400 md:group-hover:text-primary dark:md:group-hover:text-primary-400 transition ease-in-out delay-150'>
         {project.title}
       </span>
       <p className='leading-relaxed'>

@@ -33,19 +33,19 @@ const ContactForm: React.FC = () => {
         <input
           name='name'
           type='text'
-          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-primary-500 rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
+          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-primary-400 focus:ring-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
           placeholder={t("Igor Pechkin")}
         />
       </label>
       <label>
         <span className='uppercase tracking-wider font-medium text-sm text-gray-600 dark:text-gray-400 mb-2 block'>
           {t("E-Mail")}
-          <span className='text-primary-500 dark:text-primary-400'>*</span>
+          <span className='text-primary dark:text-primary-400'>*</span>
         </span>
         <input
           name='email'
           type='email'
-          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-primary-500 rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
+          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-primary-400 focus:ring-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full'
           placeholder='postman.igor.pechkin@gmail.com'
           required
         />
@@ -53,11 +53,11 @@ const ContactForm: React.FC = () => {
       <label>
         <span className='uppercase tracking-wider font-medium text-sm text-gray-600 dark:text-gray-400 mb-2 block'>
           {t("Message")}
-          <span className='text-primary-500 dark:text-primary-400'>*</span>
+          <span className='text-primary dark:text-primary-400'>*</span>
         </span>
         <textarea
           name='message'
-          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary-500 dark:focus:border-primary-400 focus:ring-primary-500 rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full resize-none'
+          className='dark:text-white dark:placeholder:text-gray-400 dark:bg-gray-700 border border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-primary-400 focus:ring-primary rounded-xl px-5 py-3 mb-6 text-base transition duration-200 w-full resize-none'
           placeholder={t("Dear Paul") + "..."}
           rows={8}
           required
