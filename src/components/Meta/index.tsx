@@ -8,7 +8,7 @@ const Meta: React.FC = () => (
     />
     <meta
       property='og:description'
-      content="Hi, I'm a Web Developer with over 3 years of experience. I use the full cycle of services to create and launch a website from scratch or redesign a live website along with the modern trends and requirements. I can help visualize even the craziest ideas converting them into elegant designs, awesome experiences and catchy brands."
+      content="Hi, I'm a Web Developer with over four years of experience. My skills include creating and launching websites from scratch or redesigning live websites to meet the latest trends and requirements. I can help you visualize any crazy idea into an elegant design, awesome user experience and catchy brand."
     />
     <meta
       property='og:image'
@@ -23,7 +23,7 @@ const Meta: React.FC = () => (
     />
     <meta
       name='twitter:description'
-      content="Hi, I'm a Web Developer with over 3 years of experience. I use the full cycle of services to create and launch a website from scratch or redesign a live website along with the modern trends and requirements. I can help visualize even the craziest ideas converting them into elegant designs, awesome experiences and catchy brands."
+      content="Hi, I'm a Web Developer with over four years of experience. My skills include creating and launching websites from scratch or redesigning live websites to meet the latest trends and requirements. I can help you visualize any crazy idea into an elegant design, awesome user experience and catchy brand."
     />
     <meta
       name='twitter:image'
@@ -31,7 +31,7 @@ const Meta: React.FC = () => (
     />
     <meta
       name='description'
-      content="Hi, I'm a Web Developer with over 3 years of experience. I use the full cycle of services to create and launch a website from scratch or redesign a live website along with the modern trends and requirements. I can help visualize even the craziest ideas converting them into elegant designs, awesome experiences and catchy brands."
+      content="Hi, I'm a Web Developer with over four years of experience. My skills include creating and launching websites from scratch or redesigning live websites to meet the latest trends and requirements. I can help you visualize any crazy idea into an elegant design, awesome user experience and catchy brand."
     />
     <link
       rel='apple-touch-icon'
