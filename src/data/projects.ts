@@ -15,6 +15,16 @@ export interface Project {
 
 const projectList: Project[] = [
   {
+    title: "Phasmophobia Journal",
+    description: {
+      en: "Web App (React.js) to accompany the game Phasmophobia",
+      uk: "Веб-додаток для супроводу гри Phasmophobia"
+    },
+    url: "https://phasmophobia.vercel.app",
+    img: ProjectImages.PhJournal,
+    isBest: true
+  },
+  {
     title: "The Mafia Helper",
     description: {
       en: "Web App (React.js) and Telegram Bot to accompany the game mafia",
@@ -52,7 +62,7 @@ const projectList: Project[] = [
     },
     url: "https://sedam.com.ua",
     img: ProjectImages.Sedam,
-    isBest: true
+    isBest: false
   },
   {
     title: "Limity",
@@ -62,7 +72,7 @@ const projectList: Project[] = [
     },
     url: "https://dribbble.com/shots/14158425-Limity-UI?utm_source=Clipboard_Shot&utm_campaign=apostlekotov&utm_content=Limity%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=apostlekotov&utm_content=Limity%20UI&utm_medium=Social_Share",
     img: ProjectImages.Limity,
-    isBest: true
+    isBest: false
   },
   {
     title: "SmartArt Center",
